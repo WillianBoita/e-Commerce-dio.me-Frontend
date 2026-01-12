@@ -1,0 +1,83 @@
+.card {
+  padding: 8px;
+  max-width: 400px;
+  height: 400px;
+  margin-bottom: 12px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.04)
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+
+  object-fit: contain; /* não distorce */
+  border-radius: 12px;
+
+  background: radial-gradient(
+    circle at top,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.03)
+  );
+
+  padding: 1rem;
+}
+
+.card-price {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.btn {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(139, 92, 246, 0.45);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
