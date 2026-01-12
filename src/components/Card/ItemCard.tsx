@@ -14,7 +14,7 @@ interface Product {
   price: number
 }
 
-interface CartItem {
+export interface CartItem {
   product_id: number
   name: string
   price: number
