@@ -1,3 +1,4 @@
+import Button from '../Button/Button'
 import './card.css'
 
 interface CardProps {
@@ -62,7 +63,7 @@ export default function Card({ id, name, description, price, image }: CardProps)
         <img className='card-image' src={image} alt={name}></img>
         <div className='sub-container'>
           <p className="card-price">R$ {price}</p>
-          <button className='btn' type='button' onClick={() => addToCart({id, name, price})}>Adicionar ao carrinho</button>
+          <Button className='btn' type='button' onClick={() => addToCart({id, name, price})}>Adicionar ao carrinho</Button>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px;
-  background-color: black;
+  background: linear-gradient(90deg, #171515, #20363a, #131212);
   color: cyan;
 }
 

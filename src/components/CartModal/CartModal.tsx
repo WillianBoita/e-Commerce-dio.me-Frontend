@@ -1,8 +1,9 @@
 "use client"
+import Button from '../Button/Button'
 import './cartModal.css'
 import { useEffect, useState } from 'react'
 
-interface CartItem {
+export interface CartItem {
   product_id: number
   name: string
   price: number
@@ -76,7 +77,7 @@ export default function CartModal({ onClose }: CartModalProps) {
                 R$ {(item.price * item.quantity).toFixed(2)}
               </span>
             </div>
-            <button className='delete-btn' type='button' onClick={() => deleteCartItem(item)}>🗑</button>
+            <Button className='delete-btn' type='button' onClick={() => deleteCartItem(item)}>🗑</Button>
           </div>
         ))}
 
@@ -86,7 +87,7 @@ export default function CartModal({ onClose }: CartModalProps) {
               <strong>Total: </strong>
               <span>R$ {total.toFixed(2)}</span>
             </div>
-            <button className='finalize-btn' type='button' onClick={() => buyCartItems()}>Finalizar compra</button>
+            <Button className='finalize-btn' type='button' onClick={() => buyCartItems()}>Finalizar compra</Button>
           </div>
         )}
       </div>
