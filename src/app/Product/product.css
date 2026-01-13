@@ -8,4 +8,57 @@
 .products {
   display: flex;
   justify-content: space-between;
+  height: 100%;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 8px;
+  background: linear-gradient(90deg, #0d4d33, #0b0b0b);
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+  gap: 4px;
+}
+
+.create-product-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70%;
+  background: linear-gradient(to top right, #0d1118, #413f61, #1f1d36, #10151e);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.input {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: black;
+  color: white;
+}
+
+.submit {
+  align-self: center;
+  width: 50%;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }

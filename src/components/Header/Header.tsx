@@ -14,6 +14,7 @@ export default function Header() {
       <h1>Dio Shopping</h1>
       <div className="link-area">
         <Link className="header-link" href='/'>Home</Link>
+        <Link className="header-link" href='/Product'>Produtos</Link>
         <Button
         className="btn"
         onClick={() => setIsCartOpen(true)}
